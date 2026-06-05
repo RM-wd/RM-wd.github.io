@@ -1,6 +1,108 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>个人主页 | RM-wd</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft Yahei", sans-serif;
+        }
+        body {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 30px;
+            line-height: 1.7;
+            color: #333;
+        }
+        .avatar-box {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .avatar {
+            width: 180px;
+            height: auto;
+        }
+        h1.name {
+            text-align: center;
+            color: #2059a8;
+            font-size: 28px;
+            margin-bottom:16px;
+        }
+        .link-group {
+            display: flex;
+            justify-content: center;
+            gap:32px;
+            margin-bottom:30px;
+        }
+        .link-group a {
+            color:#2059a8;
+            text-decoration:none;
+            font-size:17px;
+        }
+        .link-group a:hover {
+            text-decoration: underline;
+        }
+        .intro-text {
+            text-align: justify;
+            font-size:16px;
+            margin-bottom:45px;
+        }
+        h2 {
+            font-size:24px;
+            padding-bottom:8px;
+            border-bottom:1px solid #222;
+            margin:40px 0 20px;
+        }
+        .item-wrap {
+            font-size:16px;
+        }
+        .item-wrap p {
+            margin:12px 0;
+        }
+    </style>
+</head>
 <body>
-    <h1>我的个人技术博客</h1>
+    <!-- 头像区域 -->
+    <div class="avatar-box">
+        <img class="avatar" src="avatar.jpg" alt="个人头像">
+    </div>
+    <!-- 姓名 -->
+    <h1 class="name">RM-wd (个人中文名)</h1>
+    <!-- 导航链接：Github等 -->
+    <div class="link-group">
+        <a href="https://github.com/RM-wd" target="_blank">Github</a>
+        <a href="#" target="_blank">Google Scholar</a>
+        <a href="#" target="_blank">DBLP</a>
+    </div>
+    <!-- 个人简介 -->
+    <div class="intro-text">
+        软件工程在读，深耕计算机视觉与人工智能方向，专注行人重识别、多模态算法与大模型相关研究；熟悉Python、深度学习框架、前后端开发与Git工程化管理，在校期间参与多项自研科研项目与竞赛开发，持续沉淀算法落地与工程实战经验。
+    </div>
+
+    <!-- 科研情况 -->
+    <h2>科研情况</h2>
+    <div class="item-wrap">
+        <p>• 研究方向：计算机视觉、多模态大模型、行人重识别、语义适配模块设计</p>
+        <p>• 科研成果：共同发表SCI期刊论文《The Visual Computer》，围绕语义分组适配器(SGA)模块开展实验与落地验证；持续跟进RAG知识库、具身智能前沿研究。</p>
+        <p>• 学术经历：参与课程科研项目，完成数据集预处理、模型消融实验、指标评测全流程工作。</p>
+    </div>
+
+    <!-- 项目实战 -->
+    <h2>项目实战</h2>
+    <div class="item-wrap">
+        <p>• 灵枢智聊：基于RAG架构的数字人问答系统，使用ChromaDB+PyTorch实现本地知识库检索对话，项目源码开源在Github。</p>
+        <p>• 博弈算法项目：五子棋/爱因斯坦棋AI博弈引擎，集成Alpha-Beta剪枝、MCTS蒙特卡洛树搜索、Zobrist哈希优化。</p>
+        <p>• 数据分析项目：基于Pandas+Matplotlib实现人口、电商多维度数据可视化分析。</p>
+    </div>
+
+    <!-- 教育经历 -->
+    <h2>教育背景</h2>
+    <div class="item-wrap">
+        <p>• XX大学 | 软件工程专业 | 本科在读</p>
+        <p>• 学业成绩：专业前列，多次获得校级一等奖学金，多门核心课程满分。</p>
+    </div>
 </body>
 </html>
